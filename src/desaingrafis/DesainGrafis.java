@@ -6,6 +6,7 @@ package desaingrafis;
 
 import Produk.*;
 import java.util.Scanner;
+import crud.koneksi;
 /**
  *
  * @author ACER
@@ -17,7 +18,8 @@ public class DesainGrafis {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Transaksi tes = new Transaksi();
+        
+    /*    Transaksi tes = new Transaksi();
         Scanner input = new Scanner(System.in);
         
         
@@ -40,7 +42,18 @@ public class DesainGrafis {
         System.out.print("Masukan Catatan : ");
         tes.inputCatatan(input.nextLine());
         System.out.println("Tanggal Order : 20/05/2024 ");  
-        
+    */
+
+        koneksi db = new koneksi();
+        //db.simpanProduk(101, 110, "elza","10/06/2024" , 1000000);
+        //db.simpanProduk(102, 111, "wanda","10/06/2024" , 2000000);
+        //db.simpanProduk(103, 112, "tri","10/06/2024" , 3000000);
+        //db.simpanProduk(104, 113, "rizqi","10/06/2024" , 4000000);
+        //db.ubahProduk(101, 110, "ilham", "10/06/2024", 1000000);
+        //db.hapusProduk(101);
+        //db.cariProduk(101);
+        db.dataProduk();
     }
     
-}
+    
+} 
