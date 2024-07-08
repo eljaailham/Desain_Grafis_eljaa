@@ -9,10 +9,10 @@ package Produk;
  * @author ACER
  */
 public class Produk {
-    
+    //variable
     String nama, tanggal; //nama = nama produk
     int harga;
-    
+    //mendeskirpsikan variable
     public Produk(){}
     
     public Produk(String nama, String tanggal, int harga){
