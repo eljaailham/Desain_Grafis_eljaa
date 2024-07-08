@@ -7,6 +7,8 @@ package desaingrafis;
 import Produk.*;
 import java.util.Scanner;
 import crud.koneksi;
+import gui.frameUtama;
+
 /**
  *
  * @author ACER
@@ -44,7 +46,7 @@ public class DesainGrafis {
         System.out.println("Tanggal Order : 20/05/2024 ");  
     */
 
-        koneksi db = new koneksi();
+        //koneksi db = new koneksi();
         //db.simpanProduk(101, 110, "elza","10/06/2024" , 1000000);
         //db.simpanProduk(102, 111, "wanda","10/06/2024" , 2000000);
         //db.simpanProduk(103, 112, "tri","10/06/2024" , 3000000);
@@ -52,7 +54,10 @@ public class DesainGrafis {
         //db.ubahProduk(101, 110, "ilham", "10/06/2024", 1000000);
         //db.hapusProduk(101);
         //db.cariProduk(101);
-        db.dataProduk();
+        //db.dataProduk();
+        
+        
+        new frameUtama().setVisible(true);
     }
     
     
